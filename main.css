@@ -1,0 +1,178 @@
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  height: 500vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+#anchors div {
+    height: 20vh;
+}
+
+#main {
+    position: fixed;
+    background: #F7F7F7;
+    height: 100vh;
+}
+
+div {
+    transition: 1s ease-in-out;
+}
+
+.main_bg {
+    background: rgb(15, 107, 12);
+    height: 11.25vw;
+    width: 200vw;
+    position: absolute;
+    top: 45vw;
+}
+
+.hills {
+    width: 200vw;
+    height: 40vw;
+    position: absolute;
+    background-image: url('/img/hills.png');
+    background-size: cover;
+    left: 0;
+    top: -4vw;
+}
+
+.mountains {
+    width: 200vw;
+    height: 35vw;
+    position: relative;
+    background-image: url('/img/mountains.png');
+    background-size: cover;
+}
+
+.sun {
+    width: 10vw;
+    height: 10vw;
+    position: absolute;
+    background-image: url('/img/sun.png');
+    background-size: contain;
+    left: 45%;
+    top: 0;
+    transform: translateX(-50%);
+}
+
+.road {
+    width: 200vw;
+    height: 10vw;
+    position: absolute;
+    background-image: url('/img/road.png');
+    background-size: contain;
+    top: 36vw;
+}
+
+.build {
+    width: 3vw;
+    height: 5vw;
+    position: absolute;
+    background-image: url('/img/building_1.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+}
+
+.build_1 {
+    top: 22vw;
+    left: 2vw;
+}
+.build_2 {
+    top: 10.5vw;
+    left: 70vw;
+}
+.build_3 {
+    top: 21vw;
+    left: 150vw;
+}
+
+.house_1 {
+    width: 6vw;
+    height: 10vw;
+    position: absolute;
+    background-image: url('/img/building_2.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+}
+
+.house_1_1 {
+    top: 42vw;
+    left: 40vw;
+}
+.house_1_2 {
+    top: 25vw;
+    left: 102vw;
+}
+.house_1_3 {
+    top: 45vw;
+    left: 175vw;
+}
+
+
+
+.car {
+    width: 12vw;
+    height: 5.4vw;
+    top: 3vw;
+    left: 18vw;
+    position: relative;
+    background-image: url('/img/leon.png');
+    background-size: 10.4vw;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    align-content: center;
+    padding-left: 1vw;
+    padding-right: 2.75vw;
+}
+
+.wheel {
+    width: 1.75vw;
+    height: 1.75vw;
+    bottom: 0vw;
+    position: relative;
+    background-image: url('/img/wheel.png');
+    background-size: contain;
+    transition: 1s ease-in-out;
+}
+
+.wheel.active {
+    transform: rotate(360deg);
+}
