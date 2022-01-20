@@ -31,14 +31,14 @@ dd {
 
 /* Выставляем основные настройки по-умолчанию для body */
 body {
-  height: 500vh;
+  height: 300vh;
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
 }
 
 #anchors div {
-    height: 20vh;
+    height: 40vh;
 }
 
 #main {
@@ -48,7 +48,7 @@ body {
 }
 
 div {
-    transition: 1s ease-in-out;
+    transition: transform, left 1s ease-in-out;
 }
 
 .main_bg {
@@ -89,7 +89,7 @@ div {
 }
 
 .road {
-    width: 200vw;
+    width: 400vw;
     height: 10vw;
     position: absolute;
     background-image: url('/img/road.png');
@@ -109,7 +109,7 @@ div {
 
 .build_1 {
     top: 22vw;
-    left: 2vw;
+    left: 0vw;
 }
 .build_2 {
     top: 10.5vw;
@@ -118,6 +118,10 @@ div {
 .build_3 {
     top: 21vw;
     left: 150vw;
+}
+.build_4 {
+    top: 21vw;
+    left: 235vw;
 }
 
 .house_1 {
@@ -139,17 +143,19 @@ div {
     left: 102vw;
 }
 .house_1_3 {
-    top: 45vw;
+    top: 42vw;
     left: 175vw;
 }
-
-
+.house_1_4 {
+    top: 25vw;
+    left: 265vw;
+}
 
 .car {
     width: 12vw;
     height: 5.4vw;
-    top: 3vw;
-    left: 18vw;
+    top: 3.5vw;
+    left: 15vw;
     position: relative;
     background-image: url('/img/leon.png');
     background-size: 10.4vw;
@@ -159,14 +165,14 @@ div {
     justify-content: space-between;
     align-items: flex-end;
     align-content: center;
-    padding-left: 1vw;
+    padding-left: 1.05vw;
     padding-right: 2.75vw;
 }
 
 .wheel {
     width: 1.75vw;
     height: 1.75vw;
-    bottom: 0vw;
+    bottom: .15vw;
     position: relative;
     background-image: url('/img/wheel.png');
     background-size: contain;
